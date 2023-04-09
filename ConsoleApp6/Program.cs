@@ -159,8 +159,6 @@ namespace ConsoleApp6
                 Console.WriteLine("x2 = " + x2);
                 }
             }
-            double sqrt = Math.Sqrt(6);
-            Console.WriteLine(sqrt);
 
             Console.ReadLine();
         }
