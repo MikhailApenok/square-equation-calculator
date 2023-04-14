@@ -72,7 +72,7 @@ namespace ConsoleApp6
             }
             else
             {
-                for (int i = indexС - 1; i > indexA + indexB; i--)
+                for (int i = indexС - 1; i > indexB; i--)
                 {
                     c = c.Insert(0, squEqu[i].ToString());
                 }
@@ -85,10 +85,6 @@ namespace ConsoleApp6
             if (c == "")
             {
                 cInt = 1;
-            }
-            else if (c == "-")
-            {
-                cInt = -1;
             }
             else
             {
@@ -117,7 +113,7 @@ namespace ConsoleApp6
                 Console.WriteLine("a = " + aInt);
                 Console.WriteLine("b = " + bInt);
                 x1 = 0;
-                x2 = -aInt / -bInt;
+                x2 = -bInt / -aInt;
                 Console.WriteLine("x1 = " + x1);
                 Console.WriteLine("x2 = " + x2);
             }
