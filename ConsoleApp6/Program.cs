@@ -44,7 +44,7 @@ namespace ConsoleApp6
                 b = b.Insert(0, squEqu[i].ToString());
             }
             double bInt = 0;
-            if (b == "")
+            if (b == "+")
             {
                 bInt = 1;
             }
