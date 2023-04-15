@@ -44,7 +44,7 @@ namespace ConsoleApp6
                 b = b.Insert(0, squEqu[i].ToString());
             }
             double bInt = 0;
-            if (b == "+")
+            if (b == "" || b == "+" )
             {
                 bInt = 1;
             }
@@ -77,9 +77,7 @@ namespace ConsoleApp6
                     c = c.Insert(0, squEqu[i].ToString());
                 }
                 notB = squEqu[indexA + 3];
-                Console.WriteLine(notB);
                 notC = squEqu[indexB + 1];
-                Console.WriteLine(notC);
             }
             double cInt = 0;
             if (c == "")
@@ -98,14 +96,15 @@ namespace ConsoleApp6
             {
                 Console.WriteLine("a = " + aInt);
                 Console.WriteLine("c = " + cInt);
-                if ((aInt / cInt) < 0)
+                if ((-cInt / aInt) < 0)
                 {
                     Console.WriteLine("Нет корней");
                 }
                 else
                 {
-                    x1 = Math.Sqrt(-aInt / -cInt);
-                    Console.WriteLine("x = " + x1);
+                    x1 = Math.Sqrt(-cInt / aInt);
+                    Console.WriteLine("x1 = " + x1);
+                    Console.WriteLine("x2 = " + -x1); 
                 }
             }
             else if ((notC != '+' && notC != '-') && (notB == '+' || notB == '-'))
@@ -119,16 +118,7 @@ namespace ConsoleApp6
             }
             else if (notB != '+' && notB != '-' && notC != '+' && notC != '-')
             {
-                Console.WriteLine("a = " + aInt);
-                if (aInt < 0)
-                {
-                    Console.WriteLine("Нет корней");
-                }
-                else
-                {
-                    x1 = Math.Sqrt(-aInt);
-                    Console.WriteLine("x1 = " + x1);
-                }
+                    Console.WriteLine("x1 = 0");
             }
             else if ((notB == '+' || notB == '-') && (notC == '+' || notC == '-')) 
             {
