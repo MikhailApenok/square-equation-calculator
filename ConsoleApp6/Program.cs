@@ -112,7 +112,7 @@ namespace ConsoleApp6
                 Console.WriteLine("a = " + aInt);
                 Console.WriteLine("b = " + bInt);
                 x1 = 0;
-                x2 = -bInt / -aInt;
+                x2 = -bInt / aInt;
                 Console.WriteLine("x1 = " + x1);
                 Console.WriteLine("x2 = " + x2);
             }
